@@ -1,0 +1,85 @@
+body{
+    background: url(background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px #4D4D4D;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
+#main{
+  padding: 15px;
+  border: 2px solid #F3B449;
+  text-align: center;
+  width: 40%;
+  min-width: 400px;
+  height: 30%;
+  min-height: 240px;
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  margin: auto;
+  top: 0; right: 0; bottom: 0; left: 0;
+  box-shadow: 2px 2px 2px #4D4D4D;
+  border-radius: 10px;
+}
+
+#select img{
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+#options img{
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+option, button, #dropdown, #departing, #returning{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+option{
+  background-color: #F69799;
+}
+
+input[type=text]{
+  height: 30px;
+  width: 300px;
+  padding-left: 15px;
+  border: 3px solid #F69799;
+  background-color: Transparent;
+}
+
+select{
+  height: 30px;
+  width: 300px;
+  padding-left: 15px;
+  border: 3px solid #F69799;
+  background-color: Transparent;
+}
+
+button{
+  width: 400px;
+  height: 50px;
+  border: 2px solid #F3B449;
+  border-radius: 50px;
+  background-color: #F3B449;
+  background-repeat:no-repeat;
+  font-weight: bolder;
+  color: grey;
+  font-size: 18px;
+}

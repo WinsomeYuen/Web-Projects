@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WatchTV</title>
+    <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Knewave|NTR" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="drag.js"></script>
+    <script type="text/javascript" src="validation.js"></script>
+  </head>
+  <body>
+    <h3 id="prompt">Click top of box to drag</h3>
+    <div id="main">
+      <div id="header"><img src="drag.png" height="20px" width="20px" text-align="left">
+        <h1>WatchTV</h1></div>
+      <table>
+        <tr>
+          <td><input id="username" type="text" placeholder="Username"></td>
+          <td><input id="age" type="number" placeholder="Age"></td>
+        </tr>
+      </table><br/>
+      <input id="email" type="email" placeholder="Email"><br/><br/>
+      <input id="password" type="password" placeholder="Password"><br/><br/>
+      <input id="retype" type="password" placeholder="Repeat Password"><br/><br/>
+      <input type="checkbox"> I would like to receive news updates<br/>
+      <input type="button" id="button" value="Sign Up" onclick="signUp();">
+    </div>
+  </body>
+</html>

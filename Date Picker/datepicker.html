@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pick a Date</title>
+    <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+      <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'/>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <!-- Include jQuery -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+      <!-- Include Date Range Picker -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+      <script type='text/javascript' src='script.js'></script>
+  </head>
+	<body>
+        <div id="header"><h1>Select your Destination:</h1></div>
+        <div id="main">
+          <div id="select">
+              <img src="calender.png" height="30px">
+              <input type="text" id="departing" placeholder="Departing">
+              <br/><br/>
+              <img src="calender.png" height="30px">
+              <input type="text" id="returning" placeholder="Returning"><br/>
+          </div>
+          <div id="options">
+            <p><img src="destination.png" height="30px"><select id="dropdown">
+              <option value="" disabled selected>Select Destination</option>
+                    <option value="newyork">New York</option>
+                    <option value="london">London</option>
+                    <option value="beijing">Beijing</option>
+                    <option value="moscow">Moscow</option>
+                </select></p>
+              <button>Submit</button>
+          </div>
+        </div>
+  </body>
+</html>

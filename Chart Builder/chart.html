@@ -1,0 +1,78 @@
+<html>
+  <head>
+  	<title>Sales Comparison</title>
+    <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One" rel="stylesheet">
+    <script type="text/javascript" src="dataplot.js"></script>
+    <script type="text/javascript" src="barchart.js"></script>
+  </head>
+  <body>
+    <div>
+      <div id="header">
+        <div id="title"><h1>Sale Trends</h1>
+          <p id= "subtitle">A easy interactive way of viewing sales across 3 products</p></div>
+        <img src="cover.png" alt="image not supported">
+      </div>
+      <div id="main">
+        <div id="explain">
+          <div  id="productivity"><h2>Productivity</h2></div>
+          <p>First enter in the details of the sale of the 3 products you want
+            to compare in the table. The unit of measurement is by tens of thousands.
+            Your results will appear below to compare all 3 products in a graph together,
+            as well as seperate graphs to look at each product individualy.
+          </p>
+        </div>
+        <div id="enterInfo">
+          <p style="font-size: 10px">*Note - measurement is in tens of thousands</p>
+          <form name="sales">
+          <table>
+            <tr><th colspan="4">Products</th></tr>
+            <tr>
+              <th rowspan="6">Number of product Sales</th>
+              <td><input id="product1" type="text" placeholder="Product One" onchange="createOne();"></td>
+              <td><input id="product2" type="text" placeholder="Product Two" onchange="createTwo()"></td>
+              <td><input id="product3" type="text" placeholder="Product Three" onchange="createThree()"></td>
+            </tr>
+            <tr>
+              <td><input name="productOne[]" type="number" placeholder="Year One" onchange="createNew(); createOne();"></td>
+              <td><input name="productTwo[]" type="number" placeholder="Year One" onchange="createNew(); createTwo();"></td>
+              <td><input name="productThree[]" type="number" placeholder="Year One" onchange="createNew(); createThree();"></td>
+            </tr>
+            <tr>
+              <td><input name="productOne[]" type="number" placeholder="Year Two" onchange="createNew(); createOne()"></td>
+              <td><input name="productTwo[]" type="number" placeholder="Year Two" onchange="createNew(); createTwo()"></td>
+              <td><input name="productThree[]" type="number" placeholder="Year Two" onchange="createNew(); createThree()"></td>
+            </tr>
+            <tr>
+              <td><input name="productOne[]" type="number" placeholder="Year Three" onchange="createNew(); createOne()"></td>
+              <td><input name="productTwo[]" type="number" placeholder="Year Three" onchange="createNew(); createTwo()"></td>
+              <td><input name="productThree[]" type="number" placeholder="Year Three" onchange="createNew(); createThree()"></td>
+            </tr>
+            <tr>
+              <td><input name="productOne[]" type="number" placeholder="Year Four" onchange="createNew(); createOne()"></td>
+              <td><input name="productTwo[]" type="number" placeholder="Year Four" onchange="createNew(); createTwo()"></td>
+              <td><input name="productThree[]" type="number" placeholder="Year Four" onchange="createNew(); createThree()"></td>
+            </tr>
+            <tr>
+              <td><input name="productOne[]" type="number" placeholder="Year Five" onchange="createNew(); createOne()"></td>
+              <td><input name="productTwo[]" type="number" placeholder="Year Five" onchange="createNew(); createTwo()"></td>
+              <td><input name="productThree[]" type="number" placeholder="Year Five" onchange="createNew(); createThree()"></td>
+            </tr>
+          </table>
+          </form>
+        </div>
+      </div>
+      <div id="charts">
+        <div id="results"><h2> Results</h2></div>
+        <canvas id="canvas" height="400" width="650">Canvas not supported in browser</canvas>
+        <canvas id="canvasOne" height="400" width="650">Canvas not supported in browser</canvas><br/>
+        <!--Legends for Dataplot -->
+        <span style="color:#FF0066">Product 1</span>  
+        <span style="color:#9933FF">Product 2</span>  
+        <span style="color:#FF5733">Product 3 </span><br/>
+        <canvas id="canvasTwo" height="400" width="650">Canvas not supported in browser</canvas>
+        <canvas id="canvasThree" height="400" width="650">Canvas not supported in browser</canvas>
+    </div>
+    </div>
+  </body>
+</html>

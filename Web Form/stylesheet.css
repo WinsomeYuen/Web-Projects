@@ -1,0 +1,63 @@
+body{
+  background-image: url(Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: NTR;
+}
+
+h1{
+  font-style: Pacifico;
+  font-size: 100px;
+  color: white;
+}
+
+#signup{
+  border-radius: 10px;
+  width: 50%;
+  min-width: 500px;
+  height: 50%;
+  min-height: 400px;
+  background-color: #333B5B;
+  box-shadow: 2px 2px 2px;
+  position: absolute;
+  margin: auto;
+  top: 0; right: 0; bottom: 0; left: 0;
+  text-align: center;
+}
+
+#header {
+    position: relative;
+    top: -10px;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+	  height: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type=text], input[type=submit]{
+    width: 90%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    color:  #D4D1CB;
+    background-color: #8885A3;
+    font-family: NTR;
+    font-size: 18px;
+}
+
+input[type=checkbox]{
+  padding: 0 0;
+  top: 0;
+  bottom:  0;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
