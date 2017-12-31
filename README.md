@@ -1,5 +1,5 @@
 # Web-Projects
-A collection of front-end work including HTML, CSS, Javascript and jQuery
+A collection of front-end work including HTML, CSS, Javascript and jQuery. Project idea's are from CodeAcademy.
 
 ## Web Form
 This is a basic application that's displaying the different inputs you can add to your forms. Mainly made this to look into UX Design
