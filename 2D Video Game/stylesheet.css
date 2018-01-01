@@ -1,0 +1,31 @@
+body{
+    overflow: hidden;
+}
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+.myTitleClass .ui-dialog-titlebar{
+    background: pink;
+    color: white;
+    font-family: "Fredoka One", cursive;
+}
+#dialog{
+    background: #FAE6D4;
+    overflow: hidden;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .restart {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    line-height: normal;
+    margin-right: .1em;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    overflow: visible;
+    /* removes extra width in IE */
+    background-color: #F69799;
+    background-image: none;
+    color: White;
+}
