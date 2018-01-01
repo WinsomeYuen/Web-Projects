@@ -33,7 +33,6 @@ Using the HTML5 Canvas to dynamically draw graphs on the page when the user chan
 
 ## 2D Video Game
 Creating a flappy bird like game using just HTML and Javascript. Complex use of the HTML Canvas to create the moving player and generating obstacles.
-<a href="http://www.tutorialspark.com/html5/HTML5_Canvas_Graphs_Charts.php"> Resource used is here </a>
 <p align="center">
   <img src="https://c1.staticflickr.com/5/4688/38557518945_34526a1f38_b.jpg" width="850"/>
   <img src="https://c1.staticflickr.com/5/4685/38557519255_6fe41a38af_b.jpg" width="850"/>
