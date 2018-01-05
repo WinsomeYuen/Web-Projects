@@ -2,9 +2,10 @@
   <div class="container">
     <img ng-src="{{detail.url}}">
     <h2 class="photo-title">{{detail.title}}</h2>
-    <p class="photo-author">{{detail.author}}</p>
-    <p class="photo-views">{{detail.views | number}}</p>
-    <p class="photo-upvotes">{{detail.upvotes | number}}</p>
-    <p class="photo-pubdate">{{detail.pubdate | date}}</p>
+    <p class="photo-views">{{detail.price | currency:'£'}}</p>
+    <br/>
+    <p class="photo-pubdate">Date: {{detail.pubdate | date}}</p>
+    <p class="photo-author">Category: {{detail.category}}</p>
+    <p class="photo-upvotes">Likes: {{detail.upvotes | number}}</p>
   </div>
 </div>

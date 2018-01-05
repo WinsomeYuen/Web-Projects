@@ -1,5 +1,5 @@
 app.factory('photos', ['$http', function($http) {
-  return $http.get('http://s3.amazonaws.com/codecademy-content/courses/ltp4/photos-api/photos.json')
+  return $http.get('js/services/store-products.json')
          .success(function(data) {
            return data;
          })

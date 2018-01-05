@@ -1,50 +1,50 @@
 [
   {
     "title": "Brown Satchel",
-    "author": "Bag",
+    "category": "Bag",
     "url": "img/bag1.jpg",
     "pubdate": 1412208000000,
     "upvotes": 60,
-    "views": 1195
+    "price": 56
   },
   {
     "title": "Floral Dress",
-    "author": "Dress",
+    "category": "Dress",
     "url": "img/dress1.jpg",
     "pubdate": 1413590400000,
     "upvotes": 67,
-    "views": 1266
+    "price": 45
   },
   {
     "title": "Square Sunglasses",
-    "author": "Accessories",
+    "category": "Accessories",
     "url": "img/glasses2.jpg",
     "pubdate": 1415145600000,
     "upvotes": 83,
-    "views": 3048
+    "price": 34
   },
   {
     "title": "Blue Jean Jacket",
-    "author": "Jacket",
+    "category": "Jacket",
     "url": "img/jeanjacket1.jpg",
     "pubdate": 1413590400000,
     "upvotes": 55,
-    "views": 1193
+    "price": 46
   },
   {
     "title": "Mum Jeans",
-    "author": "Bottoms",
+    "category": "Bottoms",
     "url": "img/jeans1.jpg",
     "pubdate": 1418342400000,
     "upvotes": 130,
-    "views": 1283
+    "price": 58
   },
   {
     "title": "Biker Leather Jacket",
-    "author": "Jacket",
+    "category": "Jacket",
     "url": "img/leatherjacket1.jpg",
     "pubdate": 1416009600000,
     "upvotes": 2345,
-    "views": 139
+    "price": 67
   }
 ]
