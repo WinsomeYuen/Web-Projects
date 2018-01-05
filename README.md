@@ -38,4 +38,10 @@ Creating a flappy bird like game using just HTML and Javascript. Complex use of 
   <img src="https://c1.staticflickr.com/5/4685/38557519255_6fe41a38af_b.jpg" width="850"/>
 </p>
 
+## Store (Still in progress...)
+The final project for the web project track in code academy. I decided to use the AngularJs Framework instead of just using regular HTML and Javascript to create a web application. This demonstrates some basic knowledge in creating a store which displays items from a json file that you can modify to add more products to and you can interact with the items on the application.
+<p align="center">
+  <img src="" width="850"/>
+</p>
+
 <a href="https://www.Vecteezy.com">Illustrations by Vecteezy</a>
