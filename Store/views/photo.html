@@ -1,8 +1,10 @@
 <div class="photo">
-  <div class="container">
+  <div class="container" value = detail">
     <img ng-src="{{detail.url}}">
     <h2 class="photo-title">{{detail.title}}</h2>
-    <p class="photo-views">{{detail.price | currency:'£'}}</p>
+    <p class="photo-views">{{detail.price | currency:'£'}}
+    <button ng-click="addTo()" class="btn btn-info btn-sm" style="margin-left: 20px">Add to Cart
+      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button></p>
     <br/>
     <p class="photo-pubdate">Date: {{detail.pubdate | date}}</p>
     <p class="photo-author">Category: {{detail.category}}</p>
