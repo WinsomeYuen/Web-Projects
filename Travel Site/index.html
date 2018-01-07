@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Mania</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' type='text/css' href='css/stylesheet.css'/>
+    <script src="jquery.js"></script>
+    <script>
+        $(function(){
+            $("#navbar").load("pages/navbar.html");
+            $("#about").load("pages/about.html");
+            $("#service").load("pages/services.html");
+            $("#location").load("pages/locations.html");
+            $("#carousel").load("pages/reviews.html");
+            $("#booking").load("pages/book.html");
+        });
+    </script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div id="navbar"></div>
+
+    <div class="jumbotron text-center">
+        <h1 id="header">Travel Mania</h1>
+        <p>Book a holiday today</p>
+    </div>
+
+    <div id="about"></div>
+
+    <div class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo slideanim"></span>
+            </div>
+            <div class="col-sm-8">
+                <h2>Our Values</h2>
+                <h4><strong>MISSION:</strong> Our mission is to provide sustainable tourism</h4>
+                <p><strong>VISION:</strong> Our vision is to educate holiday makers on the rich history of countries</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="service"></div>
+    <div id="location"></div>
+    <div id="carousel"></div>
+    <div id="booking"></div>
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </footer>
+</body>
+</html>

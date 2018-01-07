@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <title>Travel Mania - Egypt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Varela+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel='stylesheet' type='text/css' href='../css/stylesheet.css'/>
+        <script src="jquery.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+              integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+              crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+                integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+                crossorigin=""></script>
+    </head>
+    <body id="venice">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Travel Mania</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li><a href="venice.html">Venice</a></li>
+                <li><a href="osaka.html">Osaka</a></li>
+                <li><a href="tokyo.html">Tokyo</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="mapid"></div>
+    <h1 style="text-align: center">Egypt</h1>
+    <script>
+        var mymap = L.map('mapid').setView([26.8206, 30.8025], 7);
+
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(mymap);
+    </script>
+    </body>
+</html>
