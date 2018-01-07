@@ -31,6 +31,12 @@ Using the HTML5 Canvas to dynamically draw graphs on the page when the user chan
   <img src="https://c1.staticflickr.com/5/4729/25540148288_a19447ae90_b.jpg" width="850"/>
 </p>
 
+## Travel Site
+A travel website built using bootstrap. The website makes use of a lot of bootstrap functions, along with javascript to do some form functions and getting the Leaflet Map API.
+<p align="center">
+  <img src="https://c1.staticflickr.com/5/4679/24680224067_89afa892b7_b.jpg" width="850"/>
+</p>
+
 ## 2D Video Game
 Creating a flappy bird like game using just HTML and Javascript. Complex use of the HTML Canvas to create the moving player and generating obstacles.
 <p align="center">
