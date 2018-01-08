@@ -1,3 +1,4 @@
+<script src="https://cdn.rawgit.com/skipser/youtube-autoresize/master/youtube-autoresizer.js"></script>
 <div id="about" class="container-fluid">
     <div class="row">
         <div class="col-sm-8">
@@ -10,8 +11,38 @@
                 ensure that development is a positive experience for local people; tourism companies; and tourists themselves.</p>
             <a href="mailto:travelmania@example.com?Subject=Info%Enquiries" class="btn btn-default btn-lg" target="_top">Get in Touch</a>
         </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-leaf logo"></span>
+        <div class="col-sm-4 textContainer">
+            <div style="max-width:560px;margin:0 auto; padding:5px;">
+                <div style="position: relative;padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fNGLXKaKZfQ?rel=0&amp;autoplay=1&showinfo=0&loop=1&playlist=fNGLXKaKZfQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        if(typeof YOUTUBE_VIDEO_MARGIN == 'undefined') {
+            YOUTUBE_VIDEO_MARGIN=5;
+        }
+        $('iframe').each(function(index,item) {
+            if($(item).attr('src').match(/(https?:)?\/\/www\.youtube\.com/)) {
+                var w=$(item).attr('width');
+                var h=$(item).attr('height');
+                var ar = h/w*100;
+                ar=ar.toFixed(2);
+                //Style iframe
+                $(item).css('position','absolute');
+                $(item).css('top','0');
+                $(item).css('left','0');
+                $(item).css('width','100%');
+                $(item).css('height','100%');
+                $(item).css('max-width',w+'px');
+                $(item).css('max-height', h+'px');
+                $(item).wrap('<div style="max-width:'+w+'px;margin:0 auto; padding:'+YOUTUBE_VIDEO_MARGIN+'px;" />');
+                $(item).wrap('<div style="position: relative;padding-bottom: '+ar+'%; height: 0; overflow: hidden;" />');
+            }
+        });
+    });
+</script>

@@ -7,6 +7,8 @@
                 <a href="pages/venice.html"><img src="img/venice.jpeg" alt="Venice"></a>
                 <p><strong>Venice</strong></p>
                 <p>Art, Music, Food like no other place</p>
+                <!-- Used to open the Modal -->
+                <button class="btn" data-toggle="modal" data-target="#myModal">Exclusive Dates</button>
             </div>
         </div>
         <div class="col-sm-4">
@@ -14,6 +16,8 @@
                 <a href="pages/osaka.html"><img src="img/osaka.jpg" alt="Osaka"></a>
                 <p><strong>Osaka</strong></p>
                 <p>Mix between tradition and modern</p>
+                <!-- Used to open the Modal -->
+                <button class="btn" data-toggle="modal" data-target="#myModal">Exclusive Dates</button>
             </div>
         </div>
         <div class="col-sm-4">
@@ -21,6 +25,53 @@
                 <a href="pages/egypt.html"><img src="img/africa.jpg" alt="Egypt"></a>
                 <p><strong>Egypt</strong></p>
                 <p>Beautiful sceneries</p>
+                <!-- Used to open the Modal -->
+                <button class="btn" data-toggle="modal" data-target="#myModal">Exclusive Dates</button>
             </div>
         </div>
     </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modalHeader"><span class="glyphicon glyphicon-lock"></span>Discounted Dates</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="psw"><span class="glyphicon glyphicon-calendar"></span> Dates</label>
+                            <select class="form-control" id="dates">
+                                <option>26th March</option>
+                                <option>9th September</option>
+                                <option>15th November</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, £2000 per person</label>
+                            <input type="number" class="form-control" id="psw" placeholder="How many?">
+                        </div>
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Email</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                        </div>
+                        <button type="submit" class="btn btn-block">Pay
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                    <p>Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
